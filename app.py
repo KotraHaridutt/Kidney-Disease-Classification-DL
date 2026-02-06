@@ -10,6 +10,8 @@ os.putenv('LC_ALL', 'en_US.UTF-8')
 app = Flask(__name__)
 CORS(app)
 
+clApp = None
+
 
 class ClientApp:
     def __init__(self):
@@ -44,3 +46,6 @@ if __name__ == "__main__":
     clApp = ClientApp()
 
     app.run(host='0.0.0.0', port=8080) #for AWSf
+
+if clApp is None:
+    clApp = ClientApp()
