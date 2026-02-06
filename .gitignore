@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 
 artifacts/*
+
+.dvc/config.local
+.dvc/tmp/
+
+# DVC cache (ignore if you are using a remote cache)
+.dvc/cache/
